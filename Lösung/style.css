@@ -1,0 +1,95 @@
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-size: 10vh;
+  text-align: center;
+  margin-top: 45vh;
+  animation-name:
+      /*Übung1:*/title_color,
+      /*Übung2:*/title_position,
+      /* Übung3:*/title_position_2,
+      /* Übung4:*/bounceInLeft, bounceOutRight;
+  animation-duration:
+  /*Übung1:*/0s,
+  /*Übung2:*/0s,
+  /* Übung3:*/0s,
+  /* Übung4:*/1s, 1s;
+  animation-delay:
+  /*Übung1:*/0s,
+  /*Übung2:*/0s,
+  /* Übung3:*/0s,
+  /* Übung4:*/0s, 3s;
+}
+
+/*Übung 1*/
+/* @keyframes title_color {
+  0%   {color: black;}
+  25%  {color: yellow;}
+  50%  {color: blue;}
+  100% {color: black;}
+} */
+
+/*Übung 2*/
+ @keyframes title_position {
+  from {transform: translate(0px, -500px)}
+  to {transform: translate(0px, 0px)}
+}
+
+/* Übung 3 */
+/* @keyframes title_position_2 {
+  0% {transform: translate(0px, -500px); color: black;}
+  25% {transform: translate(0px, 0px); font-size: 10vh; color: red}
+  50% {font-size: 8vh; color: orange;}
+} */
+
+/*Übung 4*/
+/* @keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+
+@keyframes bounceOutRight {
+  20% {
+    opacity: 1;
+    transform: translate3d(-20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(2000px, 0, 0);
+  }
+}
+
+.bounceOutRight {
+  animation-name: bounceOutRight;
+} */
